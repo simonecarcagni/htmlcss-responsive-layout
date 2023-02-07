@@ -7,8 +7,12 @@
 
 html{
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
+section{
+    scroll-margin-top: 4rem;
+}
 :root {
     --primary-color: #3684fd;
     --secondary-color: #9792e4;
@@ -18,6 +22,7 @@ html{
     --text-white: #FFF;
     --text-black: #000;
     --text-grey: #5a6e7f;
+    --text-yellow: #fdc15f;
 }
 
 /* Regole di debug */
@@ -29,7 +34,7 @@ html{
 }
 
 .box2 {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .bg-purple{
@@ -82,6 +87,10 @@ header .container i{
 
 .txt-purple{
     color: var(--secondary-color);
+}
+
+.txt-yellow{
+    color: var(--text-yellow);
 }
 
 .txt-align-center{
@@ -214,8 +223,6 @@ main {
     margin-bottom: 4rem;
 }
 
-
-
 #testimonial {
     padding: 3rem 0;
 }
@@ -267,6 +274,10 @@ main {
     margin: 1rem 0 2rem;
 }
 
+#benefits .txt-align-center.txt-white {
+    margin-bottom: 2rem;
+}
+
 .benefits-btn{
     text-decoration: none;
     background-color: var(--secondary-color);
@@ -276,6 +287,38 @@ main {
 #about .card {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+#about .card *{
+    margin-bottom: 2rem;
+}
+
+.about-img {
+    width: 18rem;
+    margin: auto;
+    position: relative;
+}
+
+.about-img img {
+    object-fit: cover;
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    
+}
+
+#about .card .btn.btn-purple{
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
+}
+#about .card .about-img > i {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+
+#about .cards-container{
+    padding: 1rem 0;
 }
 
 #get-started {
@@ -292,17 +335,35 @@ main {
     padding: 2rem 0;
 }
 
+#get-started .container *{
+   padding: 0.75rem 0;
+}
+
+.started-p{
+    width: 90%;
+    margin: auto;
+}
+
+#get-started .started-btn{
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+
 footer{
     background-color: var(--footer-color);
 }
 
 #footer .container {
-
     padding: 1rem 0;
 }
 
 footer .container .debug-box2 {
     margin: 1rem 0;
+}
+
+#footer .container .box2{
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -387,6 +448,16 @@ footer .container .debug-box2 {
     .header-nav{
         display: block;
     }
+
+    .started-p{
+        width: 70%;
+        margin: auto;
+    }
+
+    #footer .container .box2{
+        width: 60%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -433,7 +504,15 @@ footer .container .debug-box2 {
         width: calc((100% / 3) - 2rem);
     }
 
-    
+    .started-p{
+        width: 40%;
+        margin: auto;
+    }
+
+    #footer .container .box2{
+        width: 50%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
