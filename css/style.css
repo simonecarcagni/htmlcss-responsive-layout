@@ -28,10 +28,16 @@ html{
     border-radius: 2rem;
 }
 
-.debug-box2 {
-    height: 5rem;
-    background-color: var(--secondary-light-color);
+.box2 {
     padding: 1rem;
+}
+
+.bg-purple{
+    background-color: var(--secondary-color);
+}
+
+.bg-white{
+    background-color: var(--text-white);
 }
 
 /* Regole di CSS */
@@ -73,6 +79,11 @@ header .container i{
 .txt-black{
     color: var(--text-black);
 }
+
+.txt-purple{
+    color: var(--secondary-color);
+}
+
 .txt-align-center{
     text-align: center;
 }
@@ -141,6 +152,10 @@ main {
     font-size: 1.5rem;
 }
 
+.title-size2{
+    font-size: 3rem;
+}
+
 .icon-size{
     font-size: 4rem;
 }
@@ -170,11 +185,68 @@ main {
     margin: 1rem 0;
 }
 
+#planning .box2 img {
+    width: 100%;
+}
+
+.planning-second-box{
+    background-color: var(--text-white);
+    border-radius: 3rem;
+}
+
+.planning-second-box *{
+    margin: 1rem 0;
+}
+
+.btn.btn-purple i{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+
+#planning .btn-purple{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.planning-first-title {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+
+
 #testimonial {
     padding: 3rem 0;
 }
 
 #testimonial .card {
+    margin: 2rem 0;
+}
+
+.testimonial-first-title{
+    margin: 2rem 0;
+}
+
+.testimonial-img{
+    height: 18rem;
+    width: 18rem;
+    margin: auto;
+    
+}
+
+.testimonial-img img{
+    object-fit: cover;
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+}
+
+#testimonial .card.bg-purple{
+    border-radius: 2rem;
+}
+
+#testimonial .card .box2 p{
     margin: 2rem 0;
 }
 
@@ -186,6 +258,19 @@ main {
 #benefits .card {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+#benefits .cards .card  {
+   border-radius: 30px;
+}
+#benefits .cards .card * {
+    margin: 1rem 0 2rem;
+}
+
+.benefits-btn{
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 0.75rem 3rem;
 }
 
 #about .card {
@@ -262,6 +347,10 @@ footer .container .debug-box2 {
         flex-grow: 1;
     }
 
+    .testimonial-box{
+        padding: 3rem 0;
+    }
+
     #benefits .cards {
         display: flex;
         flex-wrap: wrap;
@@ -336,6 +425,7 @@ footer .container .debug-box2 {
         margin: 1rem;
 
     }
+
 
     #benefits .card {
         margin-left: 1rem;
