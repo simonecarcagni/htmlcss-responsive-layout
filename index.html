@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsive</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
     <body>  
 
         <!--Inizio Header-->
         <header class="site-header">
         
-            <div class="container flex space-between align-center">
-                <div class="debug-box">Logo</div>
-                <div class="debug-box">Nav</div>
+            <div class="container flex space-between center">
+                <div> <img src="./img/logo.png" alt="Logo"></div>
+                <i class="fa-solid fa-bars txt-white header-icon"></i>
+                <nav class="header-nav">
+                    <ul class="header-list flex">
+                        <li><a class="txt-white link-style" href="#planning">Planning</a></li>
+                        <li><a class="txt-white link-style" href="#testimonial">Testimonials</a></li>
+                        <li><a class="txt-white link-style" href="#features">Features</a></li>
+                        <li><a class="txt-white link-style" href="#about">About us</a></li>
+                        <li><a class="btn btn-white txt-black link-style" href="#get-started">Get Started</a></li>
+                    </ul>
+                </nav>
             </div>
         
         </header>
@@ -30,34 +40,59 @@
                     <div class="cards">
 
                         <div class="card">
-                            <div class="debug-box">Intro</div>
-                            <div class="debug-box">Immagine</div>
+
+                            <div class="first box">
+                                <div class="intro-text">
+                                    <h3 class="txt-blue title-size">Get a demo application</h3>
+                                    <p class="line-height margin txt-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta omnis corporis harum inventore fugiat. </p>
+                                    <a class="btn btn-blue link-style txt-white" href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+                                </div>
+                                <div class="img">
+                                    <img src="./img/phone.png" alt="Phone">
+                                </div>
+                            </div>
+                            
                         </div>
 
                         <div class="card">
-                            <div class="debug-box">Immagine</div>
-                            <div class="debug-box">Titolo</div>
-                            <div class="debug-box">Testo</div>
+                            <div class="box txt-align-center">
+
+                                <i class="fa-solid fa-file-code txt-blue icon-size"></i>
+                                <h3 class="txt-blue title-size">Clean Code</h3>
+                                <p class="line-height txt-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta omnis corporis harum inventore fugiat. Repellat dicta omnis corporis harum. </p>
+
+                            </div>
                         </div>
 
                         <div class="card">
-                            <div class="debug-box">Immagine</div>
-                            <div class="debug-box">Titolo</div>
-                            <div class="debug-box">Testo</div>
+                            <div class="box txt-align-center">
+                        
+                                <i class="fa-solid fa-compass-drafting txt-blue icon-size"></i>
+                                <h3 class="txt-blue title-size">Web Design</h3>
+                                <p class="line-height txt-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta omnis corporis harum inventore fugiat. </p>
+                        
+                            </div>
                         </div>
 
                         <div class="card">
-                            <div class="debug-box">Immagine</div>
-                            <div class="debug-box">Titolo</div>
-                            <div class="debug-box">Testo</div>
+                            <div class="box txt-align-center">
+                        
+                                <i class="fa-solid fa-laptop-code txt-blue icon-size"></i>
+                                <h3 class="txt-blue title-size">Development</h3>
+                                <p class="line-height txt-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta omnis corporis harum inventore fugiat. </p>
+                        
+                            </div>
                         </div>
 
                         <div class="card">
-                            <div class="debug-box">Immagine</div>
-                            <div class="debug-box">Titolo</div>
-                            <div class="debug-box">Testo</div>
+                            <div class="box txt-align-center">
+                        
+                                <i class="fa-solid fa-bullhorn txt-blue icon-size"></i>
+                                <h3 class="txt-blue title-size">Branding</h3>
+                                <p class="line-height txt-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta omnis corporis harum inventore fugiat. </p>
+                        
+                            </div>
                         </div>
-
                     </div>
                 </div>
 
